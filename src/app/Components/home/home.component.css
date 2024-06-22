@@ -19,14 +19,14 @@ body {
   margin-right: auto;
   width: var(--dim);
   height: var(--dim);
-  position: fixed; /* Fixed position to center it */
-  top: 50%; /* Move it down by 50% of the viewport height */
-  left: 50%; /* Move it horizontally by 50% of the viewport width */
-  transform: translate(-50%, -50%); /* Center it perfectly */
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Ensure it's above other content */
+  z-index: 1000;
   animation: spin988 2s linear infinite;
 }
 
@@ -244,7 +244,7 @@ canvas {
     top: 10px;
     left: 10px;
     font-size: 14px;
-    width: 90px;
+    width: 95px;
   }
 }
 
@@ -264,7 +264,7 @@ canvas {
     top: 5px;
     left: 5px;
     font-size: 12px;
-    width: 80px;
+    width: 90px;
   }
 
   .Table-hand {
@@ -298,7 +298,7 @@ canvas {
     top: 5px;
     left: 5px;
     font-size: 10px;
-    width: 70px;
+    width: 85px;
   }
 
   .Table-hand {
