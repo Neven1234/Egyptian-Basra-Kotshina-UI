@@ -36,7 +36,8 @@ export class HomeComponent implements OnInit {
     this.CatLost=false;
     this.CatWin=false;
     this.CatTurn=false;
-    console.log('new game repeat?'+ this.newGame)
+  
+    // console.log('new game repeat?'+ this.newGame)
     this.gamseServices.startGame().subscribe({
       next:(response)=>{
         this.loading=false
@@ -76,7 +77,7 @@ export class HomeComponent implements OnInit {
         next:(response)=>{
           setTimeout(() => {
             this.gameState=response.gameState
-          }, 1000);
+          }, 500);
           this.CatTurn=true
            setTimeout(() => {
             this.gamseServices.CatTurn().subscribe({
@@ -90,13 +91,13 @@ export class HomeComponent implements OnInit {
                   this.gameState=response.gameState
                   if(this.gameState?.deck.cards.length==0 && this.gameState?.player.hand.length==0
                     && this.gameState?.computer.hand.length==0 && this.gameState?.tableCards.length==0){
-                      console.log('game finished')
+                      // console.log('game finished')
                       this.GameWinner()
                   }
                 }, 1000);
               }
             })
-           },2000)
+           },1000)
           
         }
       })
