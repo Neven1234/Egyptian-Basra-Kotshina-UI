@@ -128,6 +128,7 @@ export class HomeComponent implements OnInit {
 
   onGameRestart(): void {
     this.newGame = true; 
+    
   }
 
 }

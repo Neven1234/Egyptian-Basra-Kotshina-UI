@@ -39,16 +39,18 @@ export class CatComponent implements OnInit {
     if (changes['CatTurn'] && this.CatTurn) {
       this.catTurn();
     }
+    else if(changes['NewGame'] && this.NewGame){
+      
+      this.newGame();
+      
+    }
      else if (changes['CatWin'] && this.CatWin) {
       this.catWin();
     }
      else if (changes['CatLost'] && this.CatLost) {
       this.catLost();
     }
-    else if(changes['NewGame'] && this.NewGame){
-      
-      this.newGame();
-    }
+    
   }
 
   private async loadGLTFModel(): Promise<GLTF> {

@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --background-color-light: #ffffff;
+    --background-color-dark: #2b2b2b;
+    --text-color-light: #000000;
+    --text-color-dark: #ffffff;
+    --player-score-border-light: #32bf23;
+    --player-score-border-dark: #32bf23;
+    --computer-score-border-light: #da2d2d;
+    --computer-score-border-dark: #da2d2d;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background-color: var(--background-color-dark);
+      --text-color: var(--text-color-dark);
+      --player-score-border: var(--player-score-border-dark);
+      --computer-score-border: var(--computer-score-border-dark);
+    }
+  }
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      --background-color: var(--background-color-light);
+      --text-color: var(--text-color-light);
+      --player-score-border: var(--player-score-border-light);
+      --computer-score-border: var(--computer-score-border-light);
+    }
+  }

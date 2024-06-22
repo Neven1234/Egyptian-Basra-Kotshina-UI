@@ -14,7 +14,6 @@
 </div>
 <div *ngIf="!loading && catLoaded" >
   <div *ngIf="gameStarted">
-    <app-cat [CatTurn]="CatTurn" [CatLost]="CatLost" [CatWin]="CatWin" [NewGame]="newGame"  ></app-cat>
     <div class="Computer-hand">
       <div class="ComputerCard" *ngFor="let card of gameState?.computer.hand; let i = index" [ngStyle]="getCardStyle(i)" >
           <div class="card-back"></div>
@@ -46,7 +45,7 @@
   </div>
   <div *ngIf="gameFinished">
     <div class="modal-overlay show">
-      <app-repeat (startGameEvent)="startNewGame()" [GameWinner]="GameWinnerCheck" (startNewGame)="onGameRestart()"></app-repeat>
+      <app-repeat (startGameEvent)="startNewGame()" (startNewGame)="onGameRestart()" [GameWinner]="GameWinnerCheck" ></app-repeat>
     </div>
   </div>
 </div>
