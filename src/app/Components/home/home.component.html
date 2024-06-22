@@ -2,7 +2,7 @@
   <app-start-game (startGameEvent)="startNewGame()"></app-start-game>
 </div>
 
-<div *ngIf="loading && gameStarted " class="loader">
+<div *ngIf="loading && gameStarted || !catLoaded  && gameStarted " class="loader">
 
     <div class="circle"></div>
     <div class="circle"></div>
