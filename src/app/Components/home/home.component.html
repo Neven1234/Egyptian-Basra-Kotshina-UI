@@ -9,8 +9,10 @@
     <div class="circle"></div>
     <div class="circle"></div>
 </div>
-
-<div *ngIf="!loading" >
+<div *ngIf="gameStarted">
+  <app-cat [CatTurn]="CatTurn" [CatLost]="CatLost" [CatWin]="CatWin" [NewGame]="newGame" (catLoaded)="CatLoaded()" ></app-cat>
+</div>
+<div *ngIf="!loading && catLoaded" >
   <div *ngIf="gameStarted">
     <app-cat [CatTurn]="CatTurn" [CatLost]="CatLost" [CatWin]="CatWin" [NewGame]="newGame"  ></app-cat>
     <div class="Computer-hand">

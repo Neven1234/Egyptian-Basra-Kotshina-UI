@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener, Input, OnInit, SimpleChanges, ViewChild } from '@angular/core';
+import { Component, ElementRef, EventEmitter, HostListener, Input, OnInit, Output, SimpleChanges, ViewChild } from '@angular/core';
 import * as THREE from 'three';
 import { GLTF, GLTFLoader  } from 'three/examples/jsm/loaders/GLTFLoader.js'
 
@@ -14,6 +14,8 @@ export class CatComponent implements OnInit {
   @Input() CatWin:boolean=false
   @Input() CatLost:boolean=false
   @Input() NewGame:boolean=false
+
+  @Output() catLoaded: EventEmitter<void> = new EventEmitter<void>();
   private glif!: GLTF;
   private mixer!: THREE.AnimationMixer;
   private clock = new THREE.Clock();
@@ -66,7 +68,7 @@ export class CatComponent implements OnInit {
     this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     this.renderer = new THREE.WebGLRenderer({ canvas: this.canvasRef.nativeElement });
     this.renderer.setSize(window.innerWidth, window.innerHeight);
-
+    this.catLoaded.emit()
     const model = this.glif.scene;
     model.scale.set(4, 4, 4);
     this.scene.add(model);

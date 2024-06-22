@@ -11,6 +11,7 @@ import { CatComponent } from '../cat/cat.component';
 })
 export class HomeComponent implements OnInit {
   loading:boolean=true;
+  catLoaded:boolean=false;
   gameState:GameState;
   gameStarted: boolean = false;
   gameFinished:boolean=false;
@@ -26,6 +27,9 @@ export class HomeComponent implements OnInit {
   }
 
 
+  CatLoaded(){
+    this.catLoaded=true;
+  }
   startNewGame(){
     this.gameFinished=false
     this.gameStarted = true;
@@ -125,4 +129,5 @@ export class HomeComponent implements OnInit {
   onGameRestart(): void {
     this.newGame = true; 
   }
+
 }
