@@ -1,27 +1,22 @@
-# EgyptianBasraKotshinaUI
+# Basra Cat (3D Cat Game ) - Web Application 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
+## Overview
 
-## Development server
+This project is a web application that allows users to play a 3D version of the Egyptian card game Basra with a cat. The UI is built using Angular, Bootstrap, and Three.js for interactive 3D graphics.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- **Interactive 3D Graphics**: Utilizes Three.js to render a 3D environment where users can interact with the game.
+- **Responsive Design**: Built with Bootstrap to ensure the application is responsive and user-friendly on various devices.
+- **Seamless Integration**: Communicates with the backend ASP.NET Core API for game logic and data management.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies Used
 
-## Build
+- **Angular**: For building a dynamic and modular front-end application.
+- **Bootstrap**: For responsive design and UI components.
+- **Three.js**: For rendering 3D graphics.
+- **ASP.NET Core API**: The backend API that handles game logic, user data, and interactions ([repository link here](#)).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Demo
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+[Link to The game](https://basra-cat.netlify.app/)
