@@ -15,7 +15,7 @@ This project is a web application that allows users to play a 3D version of the 
 - **Angular**: For building a dynamic and modular front-end application.
 - **Bootstrap**: For responsive design and UI components.
 - **Three.js**: For rendering 3D graphics.
-- **ASP.NET Core API**: The backend API that handles game logic, user data, and interactions ([repository link here](#)).
+- **ASP.NET Core API**: The backend API that handles game logic, user data, and interactions ([repository link here](https://github.com/Neven1234/Egyptian-Basra-Kotshina-)).
 
 ## Demo
 
